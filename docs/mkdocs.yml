@@ -3,9 +3,10 @@
 
 site_name: Open Mosaic
 site_url: https://openmosaic.ai/
+copyright: "&copy; 2025 Delos Data Inc"
 
 theme:
-  name: material
+  variant: modern
   logo: images/logo-only.png
   font:
     text: Google Sans
@@ -37,20 +38,13 @@ theme:
     - content.footnote.tooltips
     - navigation.sections
     - navigation.expand
+    - search.highlight
 extra_css:
   - stylesheets/extra.css
 
 extra:
   version:
     provider: mike
-
-plugins:
-  - search
-  - spellcheck:
-      ignore_code: yes
-      known_words: dictionary.txt
-      skip_files:
-        - coc.md # We adopt common Code of Conduct and use it as is
 
 markdown_extensions:
   # admonition
@@ -90,7 +84,6 @@ markdown_extensions:
   - footnotes
 
   # text formatting
-  - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
   - pymdownx.mark
